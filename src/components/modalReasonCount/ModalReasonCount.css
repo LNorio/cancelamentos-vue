@@ -1,0 +1,99 @@
+.black-back{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contract-base{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    max-width: 500px;
+    height: fit-content;
+    padding: 40px;
+    border-radius: 30px;
+    max-height: 90%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+}
+
+.region{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
+
+.region label{
+    font-weight: bold;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.region-details-enter-active {
+  animation: bounce 1s;
+}
+.region-details-leave-active {
+  animation: bounce 1s reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close{
+    cursor: pointer;
+    color: rgb(148, 145, 145);
+    font-size: 20px;
+}
+
+.reasons{
+    width: 70%;
+    display: inherit;
+    justify-content: space-between;
+}
+
+.reasons-outer{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 550px){
+  .contract-base{
+    padding: 40px 20px;
+  }
+
+  .region{
+    padding: 10px 10px;
+  }
+
+  .reasons{
+    width: 80%;
+  }
+}

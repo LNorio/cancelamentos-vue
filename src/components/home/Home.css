@@ -1,0 +1,74 @@
+.outer h1{
+    font-size: 50px;
+    color: white;
+}
+
+.outer input[type="file"]{
+    display: none;
+}
+
+.outer{
+    background-color: #006b33;
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+}
+
+@media only screen and (max-width: 550px ){
+    .outer{
+        width: 100vw;
+        height: 70vh;
+    }
+    
+}
+
+@media only screen and (max-width: 700px ){
+    .outer h1{
+        font-size: 40px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons .download{
+        margin: 10px 0px;
+        width: fit-content;
+    }
+}
+
+.download{
+    background-color: #f0e50a;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform;
+    transition-duration: 0.8s;
+    color: black;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.download a{
+    text-decoration: none;
+    color: black;
+}
+
+.outer .download:hover{
+    transform: scale(1.1, 1.2);
+}

@@ -1,0 +1,64 @@
+.black-back{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contract-base{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    max-width: 500px;
+    min-height: 480px;
+    max-height: fit-content;
+    padding: 40px;
+    border-radius: 30px;
+    cursor: default;
+}
+
+.same-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.same-line div:first-child{
+    margin-right: 10px;
+}
+
+.same-line div:last-child{
+    margin-left: 10px;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.spacing{
+    margin: 15px 0;
+}
+
+.spacing label{
+    font-weight: bold;
+}
+
+.header {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close{
+    cursor: pointer;
+    color: rgb(148, 145, 145);
+    font-size: 20px;
+}

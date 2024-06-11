@@ -1,0 +1,143 @@
+.square{
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    transition: transform;
+    transition-duration: 0.6s;
+}
+
+.square:hover{
+    background-color: #f0e50a;
+    transform: scale(1.2);
+}
+
+.square:hover .day{
+    color: black;
+}
+
+.square:hover .clients{
+    color: black;
+}
+
+.calendar h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.calendar p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: end;
+}
+
+.square .clients{
+    align-self: end;
+    color: #f0e50a;
+    cursor: pointer;
+}
+
+.square .day{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calendar{
+    background-color: #006b33;
+    width: 70vw;
+    max-height: fit-content;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+    padding: 20px 50px 50px 50px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 550px ){
+    .calendar{
+        width: 100vw;
+        border-radius: 0px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .calendar h1{
+        font-size: 40px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .open-modal-count{
+        margin: 10px 0px!important;
+    }
+
+    .calendar p{
+        text-align: center;
+    }
+}
+
+.calendar-inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.open-modal-count{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #006b33;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform;
+    transition-duration: 0.5s;
+    border: 1px white solid;
+    color: white;
+    margin: 0px 10px;
+}
+
+.open-modal-count:hover{
+    background-color: #f0e50a;
+    color: black;
+    transform: scale(1.2);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.7s ease-in;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.bounce-enter-active {
+  animation: bounce 1s;
+}
+.bounce-leave-active {
+  animation: bounce 1s reverse;
+}
