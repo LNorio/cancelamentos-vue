@@ -1,6 +1,6 @@
 # cancelamentos
 
-This template should help get you started developing with Vue 3 in Vite.
+Este é um aplicativo de listagem de cancelamentos e gerador de relatórios feito para treinar a linguagem Vue.
 
 ## Recommended IDE Setup
 
